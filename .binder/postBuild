@@ -1,0 +1,9 @@
+set -ex
+
+python -m ansible_kernel.install --sys-prefix
+
+jupyter lab clean
+
+# Setup a workspace, if an export file is available
+WORKSPACE=.binder/workspace.json
+test -f $WORKSPACE && jupyter lab workspaces import $WORKSPACE || echo "$WORKSPACE not found. Skipping..."

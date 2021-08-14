@@ -1,0 +1,27 @@
+---
+channels:
+  - conda-forge
+dependencies:
+  # Jupyter
+  - jupyterlab=3.1
+  - jupyter-offlinenotebook=0.2
+  - nodejs=12
+  - nbconvert=6
+  # RTC
+  - jupyterlab-link-share=0.2
+  # Python Kernel
+  - python=3.8
+  - ipykernel=5.1
+  - ipywidgets=7.6
+  - widgetsnbextension=3.5
+  - traittypes==0.2.1
+  # Datasets/Graphs
+  - numpy
+  - matplotlib
+  - pandas
+  - seaborn
+  - pyyaml
+  # Ansible
+  - ansible
+  - pip:
+      - git+https://github.com/ansible/ansible-jupyter-kernel.git#egg=ansible-kernel
