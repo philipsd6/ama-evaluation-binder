@@ -4,17 +4,21 @@ channels:
 dependencies:
   # Jupyter
   - jupyterlab=3.1
-  - jupyter-offlinenotebook=0.2
+  - jupyter-offlinenotebook
+  - jupyterlab_code_formatter=1.4
   - nodejs=12
   - nbconvert=6
   # RTC
-  - jupyterlab-link-share=0.2
+  - jupyterlab-link-share
   # Python Kernel
-  - python=3.8
-  - ipykernel=5.1
-  - ipywidgets=7.6
-  - widgetsnbextension=3.5
-  - traittypes==0.2.1
+  - python=3
+  - ipykernel=5
+  - ipywidgets=7
+  - widgetsnbextension=3
+  - traittypes=0.2
+  - black
+  - isort
+  - pip
   # Datasets/Graphs
   - numpy
   - matplotlib
