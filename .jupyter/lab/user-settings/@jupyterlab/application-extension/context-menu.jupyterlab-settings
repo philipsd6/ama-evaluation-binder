@@ -1,0 +1,9 @@
+{
+  "contextMenu": [
+    {
+      "command": "filebrowser:download",
+      "selector": ".jp-DirListing-item[data-isdir=\"false\"]",
+      "disabled": true
+    }
+  ]
+}
