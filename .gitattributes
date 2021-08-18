@@ -2,4 +2,5 @@
 *solution*.py filter=git-crypt diff=git-crypt
 Introduction.ipynb !filter !diff
 "How to run a session.ipynb" !filter !diff
+"Binder Analytics.ipynb" !filter !diff
 .gitattributes !filter !diff
