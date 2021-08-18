@@ -16,7 +16,6 @@ dependencies:
   - ipywidgets=7
   - widgetsnbextension=3
   - traittypes=0.2
-  - ipynb
   - black
   - isort
   - pip
@@ -30,3 +29,4 @@ dependencies:
   - ansible
   - pip:
       - git+https://github.com/ansible/ansible-jupyter-kernel.git#egg=ansible-kernel
+      - ipynb
