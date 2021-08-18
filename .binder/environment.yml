@@ -4,15 +4,15 @@ channels:
 dependencies:
   # Jupyter
   - jupyterlab=3.1
-  - nbconvert=6
+  - nbconvert
   # RTC
   - jupyterlab-link-share
   # Python Kernel
-  - python=3
-  - ipykernel=5
-  - ipywidgets=7
-  - widgetsnbextension=3
-  - traittypes=0.2
+  - python=3.9
+  - ipykernel
+  - ipywidgets
+  - widgetsnbextension
+  - traittypes
   - black
   - isort
   - pip
