@@ -17,3 +17,7 @@ repos:
     rev: v1.0.1
     hooks:
       - id: check-git-crypt-status
+  - repo: https://github.com/dfm/black_nbconvert
+    rev: v0.3.0
+    hooks:
+      - id: black_nbconvert
