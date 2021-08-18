@@ -8,6 +8,7 @@ dependencies:
   # RTC
   - jupyterlab-link-share
   # Python Kernel
+  - python=3
   - ipykernel=5
   - ipywidgets=7
   - widgetsnbextension=3
