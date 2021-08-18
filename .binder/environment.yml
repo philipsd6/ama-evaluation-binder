@@ -4,13 +4,10 @@ channels:
 dependencies:
   # Jupyter
   - jupyterlab=3.1
-  - jupyterlab_code_formatter=1.4
-  - nodejs=12
   - nbconvert=6
   # RTC
   - jupyterlab-link-share
   # Python Kernel
-  - python=3
   - ipykernel=5
   - ipywidgets=7
   - widgetsnbextension=3
