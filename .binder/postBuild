@@ -1,6 +1,5 @@
 set -ex
 
-conda remove jupyter-offlinenotebook
 python -m ansible_kernel.install --sys-prefix
 
 jupyter lab clean
