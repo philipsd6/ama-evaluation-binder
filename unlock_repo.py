@@ -8,6 +8,7 @@ from getpass import getpass
 from subprocess import Popen
 from subprocess import PIPE
 from subprocess import check_output
+from subprocess import CalledProcessError
 
 try:
     keyfile = [
@@ -18,6 +19,16 @@ try:
 except IndexError:
     print("Error: No keyfile found!", file=sys.stderr)
     sys.exit(1)
+
+# Ensure we have user.name/email configured in case we have to stash/unstash
+try:
+    _ = check_output(shplit("git config --local user.name"), text=True)
+    _ = check_output(shplit("git config --local user.email"), text=True)
+except CalledProcessError:
+    _ = check_output(shplit("git config --local user.name User"), text=True)
+    _ = check_output(
+        shplit("git config --local user.email user@example.com"), text=True
+    )
 
 unstash = lambda: None  # If there are no changes to stash, we don't need to unstash
 if check_output(shplit("git stash"), text=True).startswith("Saved"):
